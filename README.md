@@ -1,1 +1,1 @@
-# Web Application for the Nature Conservancy of Canada (NCC)
+# Website for information about our collaborative project for Fleming College
