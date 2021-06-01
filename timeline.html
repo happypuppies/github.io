@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Breakdown</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="js/script.js"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>  <!-- Test  two my cloning JS -->
+    <header class="col-12 outer-margin">
+        <div class="navbar" id="myTopnav">
+            <a href = "index.html">Home</a>
+            <a class="active" href = "timeline.html">Timeline</a>
+            <div class = "dropdown">
+                <!-- Use the <a> element to open the dropdown menu -->
+                <a href="solutions.html">ArcGIS Solutions</a>
+                <div class = "dropdown-content">
+                    <a href="solutions.html#story-maps">StoryMaps</a>
+                    <a href="solutions.html#exp-build">Experience Builder</a>
+                    <a href="solutions.html#exp-build-dev">Developer Edition</a>
+                    <a href="solutions.html#hub">Hub</a>
+                </div>
+            </div>
+            <a href="https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/" target="_blank">Hub Site</a>
+            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Photo by Vidar Nordli-Mathisen on Unsplash -->
+    <section class="col-12 outer-margin">
+        <div class="timeline-header">
+            <div class ="header-overlay header-overlay-gradient">
+                <h1 class="header-title">Project Breakdown</h1>
+                <p class="blurb-text">All project milestones and lessons learned.</p>
+            </div>
+        </div>
+    </section>
+    <section class="col-12">
+        <h2>Milestone 1: Problem Statement</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Challenges Encountered</h3>
+        <ul>
+            <li>Initial problem statement was written in the perspective of the developer, not the user</li>
+            <li>Scope was too large (not possible to fulfill in the allotted time)</li>
+        </ul>
+        <h3 class="title-left">Learning Outcomes</h3>
+        <ul>
+            <li>Changed the wording and scope of the problem statement to better reflect the product of
+                the web solution as opposed to the collaborative project</li>
+            <li>Refined the scope to use pre-existing data for the same study area</li>
+        </ul>
+        <h3 class="title-left">Next Steps</h3>
+        <ul>
+            <li>Begin researching web solution technology for the web application</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12 background-grey">
+        <h2>Milestone 2: Getting Started with Configurable Applications</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Challenges Encountered</h3>
+        <ul>
+            <li>Began experimenting with Experience Builder and StoryMaps as potential technology solutions</li>
+            <li>Experience Builder was a steep learning curve with a tricky to use interface (ie. feature view widget overrides
+                initial map view settings)
+            </li>
+            <li>StoryMaps didn't provide enough functionality and is optimized for multi-media and static content, which was not
+                the focus of the solution
+            </li>
+        </ul>
+        <h3 class="title-left">Learning Outcomes</h3>
+        <ul>
+            <li>Experience Builder contains a lot of useful functionality but requires a significant amount of time to learn</li>
+            <li>Sometimes using a "workaround" is easier than trying to get the widget to work in the indended manner (such
+                as manipulating the original data instead of recoding a custom widget)</li>
+            <li>The choice of the solution is directly dependent on the goal of the project</li>
+        </ul>
+        <h3 class="title-left">Next Steps</h3>
+        <ul>
+            <li>Dedicated more time to learning Exprience Builder</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12">
+        <h2>Milestone 3.1: Development in ArcGIS Experience Builder</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Challenges Encountered</h3>
+        <ul>
+            <li>Showing stream interconnectivity was difficult to do using the configurable widgets</li>
+            <li>Group editing was not possible on Experience Builder (group members could not be editing the same Web Experience at once)</li>
+            <li>Dynamic text is difficult to link to the appropriate data source</li>
+            <li>Using views was difficult, but were required to overcome challenges of widgets re-setting initial view</li>
+            <li>Difficulty in distinguishing format options between Maps, Views, and Pages</li>
+        </ul>
+        <h3 class="title-left">Learning Outcomes</h3>
+        <ul>
+            <li>Created multiple prototype proof-of-concept Experiences utilizing different widgets to display different properties
+                of the data</li>
+            <li>Possible to create a webpage-style application in Experience Builder</li>
+        </ul>
+        <h3 class="title-left">Next Steps</h3>
+        <ul>
+            <li>Decide which approaches best fit the goals of the problem statement</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12 background-grey">
+        <h2>Milestone 3.2: Download Developer Edition</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Challenges Encountered</h3>
+        <ul>
+            <li>Downloading Developer Edition was time consuming and required the download of Node.js, ArcGIS Experience Builder
+                Developer Package (requires running multiple programs from the Command Prompt)</li>
+            <li>Every usage requires starting the client and server services from Command Prompt</li>
+            <li>To authenticate the application, new credentials had to be created in a ArcGIS Developers account</li>
+            <li>To make custom widgets it is necessary to learn TypeScript and React which are ESRI specific languages</li>
+        </ul>
+        <h3 class="title-left">Learning Outcomes</h3>
+        <ul>
+            <li>Getting ArcGIS Experience Builder Developer Edition started on a local computer is time-consuming
+                (valuable time taken away from working on the actual project)</li>
+            <li>The learning curve for create custom widgets is extremely high and should be avoided if possible</li>
+        </ul>
+        <h3 class="title-left">Next Steps</h3>
+        <ul>
+            <li>Return to Experience Builder to focus on configuring the "off-the-shelf" widgets</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12">
+        <h2>Milestone 4.1: Progress Review with Shawn</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Meeting Outcomes</h3>
+        <ul>
+            <li>Recommended using ArcGIS Hub to create a website to embed the Experience Builder solutions and create a webpage-style application</li>
+            <li>Encouraged the manipulation of data instead of configuring the widget</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12 background-grey">
+        <h2>Milestone 4.2: Introduction to ArcGIS Hub</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Challenges Encountered</h3>
+        <ul>
+            <li>Default template contained a lot of features that were not necessary (subtractive rather than additive templates)</li>
+            <li>Challenging to change page formatting</li>
+            <li>Easy to lose changes when switching to Preview Mode</li>
+            <li>Difficult to find ArcGIS Hub in AGOL account as it creates a new folder upon creation</li>
+        </ul>
+        <h3 class="title-left">Learning Outcomes</h3>
+        <ul>
+            <li>ArcGIS Hub is a viable option for combining static and dynamic ESRI content (Web Maps, Experiences) in a 
+                presentation-ready format</li>
+        </ul>
+        <h3 class="title-left">Next Steps</h3>
+        <ul>
+            <li>Each group member created an ArcGIS Hub website to embed the Experiences</li>
+        </ul>
+    </div>
+    </section>
+    <section class="col-12">
+        <h2>Milestone 5: Final Submission</h2>
+    <div class="section-style-1col">
+        <h3 class="title-left">Outcomes</h3>
+        <ul>
+            <li>One ArcGIS Hub was selected to embed the Experiences along with explanatory text and web maps to support the 
+                problem statement</li>
+        </ul>
+        <h3 class="title-left">Future Improvements</h3>
+        <ul>
+            <li>More functionality and interactivity in the Experiences and in the ArcGIS Hub website</li>
+        </ul>
+    </div>
+    </section>
+    <footer class="col-12 outer-margin">
+        <div id="footer-images">
+            <img src="images/FlemingSENRS_noBackground.png" alt="Fleming School of the Environment and Natural Resources Logo" style="height: 100%">
+            <img src="images/FlemingGIS_000_SM.png" alt="Fleming GIS Program Logo" style="height: 100%">
+            <img src="images/logo.png" alt="Happy Puppies Team Logo" style="height: 100%">
+            <p>&#9400; GEOM99 2021 Web Delta</p>
+        </div>
+    </footer>
+</body>
+</html>

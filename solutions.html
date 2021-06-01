@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcGIS Solutions</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="js/script.js"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <header class="col-12 outer-margin">
+        <div class="navbar" id="myTopnav">
+            <a href = "index.html">Home</a>
+            <a href = "timeline.html">Timeline</a>
+            <div class = "dropdown">
+                <!-- Use the <a> element to open the dropdown menu -->
+                <a class="active" href="solutions.html">ArcGIS Solutions</a>
+                <div class = "dropdown-content">
+                    <a href="#story-maps">StoryMaps</a>
+                    <a href="#exp-build">Experience Builder</a>
+                    <a href="#exp-build-dev">Developer Edition</a>
+                    <a href="#hub">Hub</a>
+                </div>
+            </div>
+            <a href="https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/" target="_blank">Hub Site</a>
+            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Photo by Pankaj Patel on Unsplash -->
+    <section class="col-12 outer-margin">
+        <div class="solutions-header">
+            <div class ="header-overlay header-overlay-gradient">
+                <h1 class="header-title">Esri Configurables</h1>
+                <p class="blurb-text">A walkthrough of the different software solutions we explored.</p>
+            </div>
+        </div>
+    </section>
+    <section class="col-12">
+        <h2 id="story-maps">ArcGIS StoryMaps</h2>
+        <p class="section-style-1col">ArcGIS StoryMaps was investigated by Kathryn as a possible solution to accompany the ArcGIS 
+            Experience Builder application. This was done in order to avoid some of the bugs that were being discovered while working 
+            with Experience Builder. While working with StoryMaps, the biggest limitation that was noticed was the type of content 
+            that can be included in the solution. StoryMaps seems to be an optimal way to share photo and video content along with 
+            basic web maps and text content. StoryMaps also has the ability to embed html content, which was experimented with using 
+            the NCC website, however lacks the functionality to do anything more technical. The group decided to not proceed with 
+            StoryMaps any further past this point, deciding that the functionality of the web app should be prioritized. </p>
+        <div class="col-6">
+            <img src="images/Storymap6.PNG" class="exp-image" alt="Screenshot of StoryMap introduction">
+        </div>
+        <div class="col-6">
+            <img src="images/Storymap7.PNG" class="exp-image" alt="Screenshot of web map showing Strahler Stream Order in a StoryMap">
+        </div>
+        <div class="col-6">
+            <img src="images/Storymap8.PNG" class="exp-image" alt="Screenshot of a web map showing the study area in a StoryMap">
+        </div>
+        <div class="col-6">
+            <img src="images/Storymap9.PNG" class="exp-image" alt="Screenshot of the NCC website embedded in a StoryMap">
+        </div>
+    </section>
+    <section class="col-12 background-grey">
+        <h2 id="exp-build">ArcGIS Experience Builder</h2>
+        <p class="section-style-1col">Exploring Experience Builder, the team could quickly see that it was a viable option for our 
+        intended outcome of an app that presents a dynamic map of our study area indicating headwaters and helping the user 
+        trace downstream flow and connected stream segments.  Experience Builder is extremely powerful with many built-in 
+        templates and widgets that can provide all sorts of functionality.  The drawback is that with all of these options, it 
+        is fairly complex upon first approach.  The tools and the various ways they can be customized are not immediately intuitive.
+        Consequently, the team explored multiple approaches to using Experience Builder.  We explored many different templates, and 
+        learned how to use many of the available widgets.</p>
+        <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
+            This gave us the opportunity to create an experience that looks like a website where the first page is a project 
+            introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
+            Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+        <div class="col-6">
+            <img src="images/exp-page.PNG" class="exp-image" alt="Screenshot of a 'Home' page created for a draft web experience">
+        </div>        
+        <div class="col-6">
+            <img src="images/exp-page1.PNG" class="exp-image" alt="Screenshot of a web experience embedded into another web experience on a separate page">
+        </div>
+        <div class="col-6">
+            <img src="images/streamorderfilteringexp.PNG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order">
+        </div>        
+        <div class="col-6">
+            <img src="images/querystreamexp.PNG" class="exp-image" alt="Screenshot of a web experience with a widget for locating the next downstream event">
+        </div>
+    </section>
+    <section class="col-12">
+        <h2 id="exp-build-dev">ArcGIS Experience Builder Developer Edition</h2>
+        <p class="section-style-1col">To explore the power of ArcGIS Experience Builder, ArcGIS Experience Builder Developer Edition was 
+            installed on James and Kristine's computers. Since the server can be installed using a personal ArcGIS Developers 
+            account, this offers a testing environment for custom development that is not connected to a larger 
+            organization. Furthermore, experiences built with the Developer Edition will not disappear once a user 
+            is no longer part of an organization. Drawbacks include having to start the client and server 
+            every time you want to use the Developer Edition, inability to share an experience easily with external 
+            users and having to learn TypeScript and React to create custom widgets. Therefore, if the client does 
+            not have a requirement for custom development, there is no need to install ArcGIS Experience Builder 
+            Developer Edition and ArcGIS Experience Builder will be able to meet all the project requirements.</p>
+
+            <p class="section-style-1col">Installing the Experience Builder Developers Editions is no mean feat! The listed instructions
+            breeze through certain specific steps, such as the need to go to the Developers account OAuth2.0 tab and reset the 
+            redirect-URI to localhost:3001 in order to be able to connect with the actual development tool once everything has been installed.
+            It requires download and install of Node.js which needs a system reboot.  And then after the download and install of the 
+            primary package (ArcGISExperienceBuilder) it requires activation of the client and server components in Command Prompt, and then 
+            these need to be turned on with the command prompt every time it is used.  As we were developing Experience options 
+            for our collaborative project's dynamic map, it seemed that a custom widget may be require to search through the data and 
+            select stream segments by NextDownIDs, and so we did explore the custom widget direction, but now are moving more in the 
+            direction of restructuring the data in the final WebMap to fascilitate this functionality.</p>
+
+        <div class="col-6">
+            <img src="images/nodejsScreenCap.JPG" class="exp-image" alt="Screenshot of the Node.js installation">
+        </div>        
+        <div class="col-6">
+            <img src="images/OAth2.PNG" class="exp-image" alt="Screenshot of the OAuth2.0 window in the ArcGIS Developers website">
+        </div>
+        <div class="col-6">
+            <img src="images/client.PNG" class="exp-image" alt="Screenshot of using the Command Prompt to start the client">
+        </div>        
+        <div class="col-6">
+            <img src="images/server.PNG" class="exp-image" alt="Screenshot of using the Command Prompt to start the server">
+        </div>
+            <div class="col-6">
+                <img src="images/expbuild.png" class="exp-image" alt="Screenshot of the ArcGIS Experience Builder Developer Edition software running on localhost port 3001">
+            </div>        
+            <div class="col-6">
+                <img src="images/expproject.PNG" class="exp-image" alt="Screenshot of a draft web experience made with the ArcGIS Experience Builder Developer Edition">
+            </div>
+    </section>
+    <section class="col-12 background-grey">
+        <h2 id="hub">ArcGIS Hub</h2>
+        <p class="section-style-1col">While ArcGIS Experience Builder has the ability to create web applications that look like webpages (i.e. an experience
+            can contain a page with all the front-end web design elements), the client did not specify that everything must be hosted in Experience Builder.
+            A Hub Site was developed with ArcGIS Hub to create a web application that resembles a webpage with background information about the project and 
+            study area. Advantages of Hub include more customization options available for the layout and seamless integration of ArcGIS applications like 
+            web maps, web experiences and graphs.  It was discovered after the Hub app was thought to be completed that changes in one of the web maps (adding
+            layers in an attempt to improve Query widget functionality) caused the stream order filtering to no longer function properly.  However this was 
+            an easy fix simply by removing those layers from the web map, and then the filter settings were re-worked to use buttons instead of tabs to select 
+            groupings of stream orders.  Always beta-test everything before final submission!</p>
+        <div class="col-6">
+            <img src="images/hub.PNG" class="exp-image" alt="Screenshot of the Hub Site">
+        </div>        
+        <div class="col-6">
+            <img src="images/hub5.PNG" class="exp-image" alt="Screenshot of a web map showing the Study Area and paragraph in the Hub Site">
+        </div>
+        <div class="col-6">
+            <img src="images/hub2.PNG" class="exp-image" alt="Screenshot of a web map showing Strahler Stream Order in the Hub Site">
+        </div>        
+        <div class="col-6">
+            <img src="images/hub1.PNG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order in the Hub Site">
+        </div>
+        <div class="col-6">
+            <img src="images/hub3.PNG" class="exp-image" alt="Screenshot of a bar graph showing Stream Order counts in the Hub Site">
+        </div>
+        <div class="col-6">
+            <img src="images/hub4.PNG" class="exp-image" alt="Screenshot of a web experience with a search widget in the Hub Site">
+        </div>
+    </section>
+    <section class="col-12">
+        <h2>Conclusions</h2>
+        <p class="section-style-1col">In the course of this exercise, we found the exploration of ESRI web development solutions very fruitful and enlightening.
+        We had originally thought that StoryMaps might be a sufficient and easy pathway for developing a web aplication along the lines of our needs 
+        for our collaborative project mapping headwaters, but eventually settled on a preference for the enhanced functionality of Experience Builder.
+        Since our focus is not on data analysis, we determined dashboards would not add to what we are trying to accomplish, and we found WebApp Builder 
+        to be basically a watered-down version of Experience Builder, and so we went with that.  Since our collaborative project client is familiar with, 
+        and uses, ESRI products, we did not pursue open source options.  We now feel like we have a clear path forward to produce a high-quality dynamic 
+        Web Map Application that will be valuable to our clients' conservation efforts, built in ESRI Experience Builder, with the ability to highlight and 
+        immediately identify, headwater streams, and their interconnected hierarchy of down-stream flow. And creating a platform in Hub to document
+        our process has shown that Hub is relatively easy to use and a good way to showcase other ESRI web applications organized with explanatory
+        text and images.</p>
+        <button type="button" class="button button2" onclick="window.open('https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/', '_blank')">View Hub Site</button>
+    </section>
+    <footer class="col-12 outer-margin">
+        <div id="footer-images">
+            <img src="images/FlemingSENRS_noBackground.png" alt="Fleming School of the Environment and Natural Resources Logo" style="height: 100%">
+            <img src="images/FlemingGIS_000_SM.png" alt="Fleming GIS Program Logo" style="height: 100%">
+            <img src="images/logo.png" alt="Happy Puppies Team Logo" style="height: 100%">
+            <p>&#9400; GEOM99 2021 Web Delta</p>
+        </div>
+    </footer>
+</body>
+</html>
