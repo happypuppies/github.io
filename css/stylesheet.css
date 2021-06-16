@@ -1,7 +1,7 @@
 /* Design inspiration: https://luna.flemingcollege.ca/geom99/2020/webAlpha/index.htm */
 
 /***********
-GEOM99 Group Project
+ASPT62 Collaborative Project Open House Website
 Collaborators: Kristine Luangkhot, Kathryn Little, James Serendip
 Creation Date: March 26, 2020
 ***********/
@@ -126,7 +126,7 @@ Date: November 28, 2020
 
 /* Apply style to header section with background image and text */
 .main-header {
-	background-image: url("../images/rice-lake.jpg");
+	background-image: url("../images/DSC00571.JPG");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -166,10 +166,20 @@ Date: November 28, 2020
 .header-title {
 	margin-top: 0px;
 	padding-top: 200px;
+	padding-left: 10%;
+	padding-right: 10%;
 	color: white;
 	font-size: 30pt;
     text-align: center;
 }
+
+#photo-credit {
+	font-size: 10pt;
+	text-align: right;
+	padding-top: 12%;
+	padding-right: 1%;
+}
+
 .blurb-text {
 	margin-top: 20px;
 	color: white;
