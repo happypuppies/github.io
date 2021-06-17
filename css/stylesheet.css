@@ -51,7 +51,7 @@ li {
 }
 
 .navbar {
-	display: block;
+  display: block;
   margin-top: 0em;
   margin-bottom: 0em;
   margin-right: 0px;
@@ -65,7 +65,7 @@ li {
 
 /* Change font and text colour of the navigation bar items to match chosen colour scheme */
 .navbar a {
-	float: left;
+  float: left;
   display: block;
   font-family:"Helvetica", Arial, sans-serif;
   color: #FFFFFF99;
@@ -127,25 +127,25 @@ Date: November 28, 2020
 /* Apply style to header section with background image and text */
 .main-header {
 	background-image: url("../images/DSC00571.JPG");
-	min-height: 500px;
+	margin-top: 46px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.solutions-header {
-	background-image: url("../images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg");
-	min-height: 500px;
+.methodology-header {
+	background-image: url("../images/DSC_0350.JPG");
+	margin-top: 46px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.timeline-header {
+.deliverables-header {
 	background-image: url("../images/vidar-nordli-mathisen-Kuu5mmxkwW4-unsplash.jpg");
-	min-height: 500px;
+	margin-top: 46px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -154,7 +154,6 @@ Date: November 28, 2020
 
 .header-overlay {
 	color: white;
-	height: 500px;
 }
 
 /*Source for gradient from https://www.w3schools.com/css/css3_gradients.asp*/
@@ -163,21 +162,25 @@ Date: November 28, 2020
     opacity: 0.90;
 }
 
-.header-title {
-	margin-top: 0px;
-	padding-top: 200px;
-	padding-left: 10%;
-	padding-right: 10%;
+.page-title {
 	color: white;
 	font-size: 30pt;
     text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #photo-credit {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10%;
+	padding-bottom: 1%;
+	padding-right: 1%;
 	font-size: 10pt;
 	text-align: right;
-	padding-top: 12%;
-	padding-right: 1%;
 }
 
 .blurb-text {
@@ -209,7 +212,7 @@ Date: November 28, 2020
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 16px;
@@ -227,6 +230,11 @@ Date: November 28, 2020
 	background-color: #3182bd;
 	color: white;
   }
+
+  .container {
+	  text-align: center;
+  }
+
 /* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 Styles for small devices (phones and narrow tablets) */
   @media only screen and (min-width: 768px) {
