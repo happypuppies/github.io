@@ -3,7 +3,7 @@
 <head>
     <!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collab2110RiceLakePlainsLakeIroquoisPlainHeadwaters</title>
+    <title>APST62 Collab Project</title>
     <link rel="icon" href="images/logo.png">
     <script src="js/script.js"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -14,18 +14,17 @@
     <header class="col-12 outer-margin">
         <div class="navbar" id="myTopnav">
             <a class="active" href = "index.html">Home</a>
-            <a href = "timeline.html">Timeline</a>
+            <a href = "methodology.html">Methodology</a>
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
-                <a href="solutions.html">ArcGIS Solutions</a>
+                <a href="deliverables.html">Deliverables</a>
                 <div class = "dropdown-content">
-                    <a href="solutions.html#story-maps">StoryMaps</a>
-                    <a href="solutions.html#exp-build">Experience Builder</a>
-                    <a href="solutions.html#exp-build-dev">Developer Edition</a>
-                    <a href="solutions.html#hub">Hub</a>
+                    <a href="deliverables.html#streams">Headwater Streams</a>
+                    <a href="deliverables.html#trace-tools">Trace Tools</a>
+                    <a href="deliverables.html#static-map">Static Map</a>
+                    <a href="deliverables.html#web-exp">Web Experience</a>
                 </div>
             </div>
-            <a href="https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/" target="_blank">Hub Site</a>
             <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -34,8 +33,8 @@
     <section class="col-12 outer-margin">
         <div class="main-header">
             <div class ="header-overlay header-overlay-gradient">
-                <h1 class="header-title">Headwater Mapping in the <br> Rice Lake Plains Lake Iroquois Plain Natural Area</h1>
-                <p class="blurb-text">Modeling and Mapping Headwater Streams for the Nature Conservancy of Canada</p>
+                <h1 class="page-title">Headwater Streams Mapping in the Rice Lake Plains and Lake Iroquois Plain</h1>
+                <p id="photo-credit">Photo Credit: Chelsea Marcantonio via the Nature Conservancy of Canada</p>
             </div>
         </div>
     </section>
@@ -64,18 +63,26 @@
     </div>
     </section>
     <section class="col-12">
-        <h2>Meet the Team</h2>
+        <h2>Meet the Happy Puppies</h2>
         <div class="col-4">
             <img class="headshot" src="images/kate-bitmoji.png" alt="Kathryn Headshot">
             <h3>Kathryn Little</h3>
             <h4>Applications Specialist</h4>
             <p>Bad at chemistry, better at GIS. Thinks volcanoes are cool. She is responsible for administration and documentation.</p>
+            <div class="container">
+                <button type="button" class="button button2" onclick="window.open('mailto:littlekathrynj@gmail.com')">Email</button>
+                <button type="button" class="button button2" onclick="window.open('https://www.linkedin.com/in/littlekathryn/', '_blank')">LinkedIn</button>
+            </div>
         </div>
         <div class="col-4">
             <img class="headshot" src="images/kristine-bitmoji.png" alt="Kristine Headshot">
             <h3>Kristine Luangkhot</h3>
             <h4>Applications Specialist</h4>
-            <p>Avid Tetris player and builder of Lego. She is responsible for sourcing and processing data.</p>
+            <p>Avid Tetris player and builder of Lego. Loves using software to solve problems. She is responsible for sourcing and processing data.</p>
+            <div class="container">
+                <button type="button" class="button button2" onclick="window.open('mailto:ksluangkhot@gmail.com')">Email</button>
+                <button type="button" class="button button2" onclick="window.open('https://www.linkedin.com/in/kristine-luangkhot-261042154/', '_blank')">LinkedIn</button>
+            </div>
         </div>
         <div class="col-4">
             <img class="headshot" src="images/james-icon.png" alt="James Headshot">
@@ -83,6 +90,10 @@
             <h4>Applications Specialist</h4>
             <p>Hypnotist, tai chi player, editor, teacher, Python programmer and GIS Analyst.  He is responsible for editing and development of 
             apps and scripts.</p>
+            <div class="container">
+                <button type="button" class="button button2" onclick="window.open('mailto:jamesserendip@gmail.com')">Email</button>
+                <button type="button" class="button button2" onclick="window.open('https://www.linkedin.com/in/serendiphypnotherapy', '_blank')">LinkedIn</button>
+            </div>
         </div>
     </section>
     <footer class="col-12 outer-margin">
@@ -90,7 +101,8 @@
             <img src="images/FlemingSENRS_noBackground.png" alt="Fleming School of the Environment and Natural Resources Logo" style="height: 100%">
             <img src="images/FlemingGIS_000_SM.png" alt="Fleming GIS Program Logo" style="height: 100%">
             <img src="images/logo.png" alt="Happy Puppies Team Logo" style="height: 100%">
-            <p>&#9400; GEOM99 2021 Web Delta</p>
+            <img src="images/ncc_logo.png" alt="Nature Conservancy of Canada Logo" style="height: 100%">
+            <p>&#9400; APST62 2021 The Happy Puppies</p>
         </div>
     </footer>
 </body>

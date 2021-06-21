@@ -3,7 +3,7 @@
 <head>
     <!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArcGIS Solutions</title>
+    <title>Client Requirements</title>
     <link rel="icon" href="images/logo.png">
     <script src="js/script.js"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -14,18 +14,17 @@
     <header class="col-12 outer-margin">
         <div class="navbar" id="myTopnav">
             <a href = "index.html">Home</a>
-            <a href = "timeline.html">Timeline</a>
+            <a href = "methodology.html">Methodology</a>
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
-                <a class="active" href="solutions.html">ArcGIS Solutions</a>
+                <a class="active" href="deliverables.html">Deliverables</a>
                 <div class = "dropdown-content">
-                    <a href="#story-maps">StoryMaps</a>
-                    <a href="#exp-build">Experience Builder</a>
-                    <a href="#exp-build-dev">Developer Edition</a>
-                    <a href="#hub">Hub</a>
+                    <a href="#streams">Headwater Streams</a>
+                    <a href="#trace-tools">Trace Tools</a>
+                    <a href="#static-map">Static Map</a>
+                    <a href="#web-exp">Web Experience</a>
                 </div>
             </div>
-            <a href="https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/" target="_blank">Hub Site</a>
             <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -33,15 +32,16 @@
     </header>
     <!-- Photo by Pankaj Patel on Unsplash J-->
     <section class="col-12 outer-margin">
-        <div class="solutions-header">
+        <div class="deliverables-header">
             <div class ="header-overlay header-overlay-gradient">
-                <h1 class="header-title">Esri Configurables</h1>
-                <p class="blurb-text">A walkthrough of the different software solutions we explored.</p>
+                <h1 class="page-title">Deliverables</h1>
+                <p class="blurb-text">Headwater streams, custom script tools, poster map and web application delivered to the client.</p>
+                <p id="photo-credit">Photo Credit: Chelsea Marcantonio via the Nature Conservancy of Canada</p>
             </div>
         </div>
     </section>
     <section class="col-12">
-        <h2 id="story-maps">ArcGIS StoryMaps</h2>
+        <h2 id="streams">Hydrological Modelling Results</h2>
         <p class="section-style-1col">ArcGIS StoryMaps was investigated by Kathryn as a possible solution to accompany the ArcGIS 
             Experience Builder application. This was done in order to avoid some of the bugs that were being discovered while working 
             with Experience Builder. While working with StoryMaps, the biggest limitation that was noticed was the type of content 
@@ -63,7 +63,7 @@
         </div>
     </section>
     <section class="col-12 background-grey">
-        <h2 id="exp-build">ArcGIS Experience Builder</h2>
+        <h2 id="trace-tools">Trace Downstream and Upstream Script Tools</h2>
         <p class="section-style-1col">Exploring Experience Builder, the team could quickly see that it was a viable option for our 
         intended outcome of an app that presents a dynamic map of our study area indicating headwaters and helping the user 
         trace downstream flow and connected stream segments.  Experience Builder is extremely powerful with many built-in 
@@ -89,7 +89,7 @@
         </div>
     </section>
     <section class="col-12">
-        <h2 id="exp-build-dev">ArcGIS Experience Builder Developer Edition</h2>
+        <h2 id="static-map">Large Format Poster Map</h2>
         <p class="section-style-1col">To explore the power of ArcGIS Experience Builder, ArcGIS Experience Builder Developer Edition was 
             installed on James and Kristine's computers. Since the server can be installed using a personal ArcGIS Developers 
             account, this offers a testing environment for custom development that is not connected to a larger 
@@ -130,7 +130,7 @@
             </div>
     </section>
     <section class="col-12 background-grey">
-        <h2 id="hub">ArcGIS Hub</h2>
+        <h2 id="web-exp">Web App: ArcGIS Experience Builder</h2>
         <p class="section-style-1col">While ArcGIS Experience Builder has the ability to create web applications that look like webpages (i.e. an experience
             can contain a page with all the front-end web design elements), the client did not specify that everything must be hosted in Experience Builder.
             A Hub Site was developed with ArcGIS Hub to create a web application that resembles a webpage with background information about the project and 
@@ -170,14 +170,15 @@
         immediately identify, headwater streams, and their interconnected hierarchy of down-stream flow. And creating a platform in Hub to document
         our process has shown that Hub is relatively easy to use and a good way to showcase other ESRI web applications organized with explanatory
         text and images.</p>
-        <button type="button" class="button button2" onclick="window.open('https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/', '_blank')">View Hub Site</button>
+        <p><button type="button" class="button button2" onclick="window.open('https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/', '_blank')">View Hub Site</button></p>
     </section>
     <footer class="col-12 outer-margin">
         <div id="footer-images">
             <img src="images/FlemingSENRS_noBackground.png" alt="Fleming School of the Environment and Natural Resources Logo" style="height: 100%">
             <img src="images/FlemingGIS_000_SM.png" alt="Fleming GIS Program Logo" style="height: 100%">
             <img src="images/logo.png" alt="Happy Puppies Team Logo" style="height: 100%">
-            <p>&#9400; GEOM99 2021 Web Delta</p>
+            <img src="images/ncc_logo.png" alt="Nature Conservancy of Canada Logo" style="height: 100%">
+            <p>&#9400; APST62 2021 The Happy Puppies</p>
         </div>
     </footer>
 </body>
