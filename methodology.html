@@ -47,6 +47,7 @@
         <ul>
             <li>High resolution elevation data is expensive or incomplete.</li>
             <img src="images/HighResDataFootprints.jpg" alt="footprint of high res elevation data not covering Area of Interest">
+            <p>Footprints of high resolution data from NRCAN do not cover the Area Of Interest (yellow polygon).</p>
             <li>High resolution aerial imagery data for model verificatin was also hard to find.</li>
         </ul>
         <h3 class="title-left">Outcomes</h3>
@@ -54,8 +55,10 @@
             <li>Ontario GeoHub provided great elevation data in their Ontario Integrated Hydrology dataset,
             as well as cold water data in their Aquatic Resource Area data.</li>
             <img src="images/OIHdata.jpg" alt="Ontario Integrated Hydrology Data web interface view">
+            <p>Ontario GeoHub was our best source of data, with elevation data used from Ontario Integrated Hydrology (OIH).</p>
             <li>South Central Ontario Orthophotography (SCOOP) 2018 high resolution imagery tiles were provided by the NCC for model verification.</li>
             <img src="images/SCOOPimages.jpg" alt="SCOOP 2018 high res tiles">
+            <p>One of seven SCOOP 2018 tiles provided by NCC.</p>
             <li>Data was extracted by mask to the Area Of Interest and Projected to NAD 83 Ontario MNR Lambert.</li>
         </ul>
         <h3 class="title-left">Recommendations</h3>
@@ -88,14 +91,20 @@
             with tools from the Arc Hydro tool set imported into ArcGIS Pro 2.7 to construct a stream layer with a threshold value
             of 150.</li>
             <img src="images/EFDIRarchydroModelImage.jpg" alt="ArcGIS Pro Model to construct streams from EFDRI with Arc Hydro tools">
+            <p>Model used to construct streams in the Area Of Interest</p>
             <li>Inputs were set to parameters to allow the user to quickly reset inputs and stream threshold so many combinations could
             be easily created and compared for analysis.</li>
             <li>After examining many possible stream threshold value from the various combinations of DEM or EFDIR input and built-in 
             hydrology tools or Arc Hydro tools, the final model was chosen.</li>
             <img src="images/StreamThresholdTestsSpreadsheetImage.jpg" alt="Spreadsheet of inputs and stream thresholds test in models">
+            <p>Clip of spreadsheet used to track combinations of input data, toolset used and stream threshold.</p>
             <li>The top selected models were shared with the NCC and discussed to settle on the final model from the EFDIR data using 
             Arc Hydro tools with a stream threshold of 150.  THough it is known that this creates Strahler Order 1 streams that are 
             ephemeral, this was preferred by the client.</li>
+            <li>Aquatic Resource Area data was incorporated with stream model data to a stream segments layer that contains only segments 
+            in areas designated as cold water.</li>
+            <img src="images/coldwatersegmentsexample.jpg" alt="Cold water segments shown against all streams in Great Trent area">
+            <p>Cold water segments shown against all streams show important fish habitats.</p>
         </ul>
         <h3 class="title-left">Recommendations</h3>
         <ul>
