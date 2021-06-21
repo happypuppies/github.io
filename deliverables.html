@@ -50,42 +50,42 @@
             the NCC website, however lacks the functionality to do anything more technical. The group decided to not proceed with 
             StoryMaps any further past this point, deciding that the functionality of the web app should be prioritized. </p>
         <div class="col-6">
-            <img src="images/Storymap6.PNG" class="exp-image" alt="Screenshot of StoryMap introduction">
+            <img src="images/streams_fc.JPG" class="exp-image" alt="Screenshot of StoryMap introduction">
         </div>
         <div class="col-6">
-            <img src="images/Storymap7.PNG" class="exp-image" alt="Screenshot of web map showing Strahler Stream Order in a StoryMap">
-        </div>
-        <div class="col-6">
-            <img src="images/Storymap8.PNG" class="exp-image" alt="Screenshot of a web map showing the study area in a StoryMap">
-        </div>
-        <div class="col-6">
-            <img src="images/Storymap9.PNG" class="exp-image" alt="Screenshot of the NCC website embedded in a StoryMap">
+            <img src="images/streams_fc_table.JPG" class="exp-image" alt="Screenshot of web map showing Strahler Stream Order in a StoryMap">
         </div>
     </section>
     <section class="col-12 background-grey">
         <h2 id="trace-tools">Trace Downstream and Upstream Script Tools</h2>
-        <p class="section-style-1col">Exploring Experience Builder, the team could quickly see that it was a viable option for our 
-        intended outcome of an app that presents a dynamic map of our study area indicating headwaters and helping the user 
-        trace downstream flow and connected stream segments.  Experience Builder is extremely powerful with many built-in 
-        templates and widgets that can provide all sorts of functionality.  The drawback is that with all of these options, it 
-        is fairly complex upon first approach.  The tools and the various ways they can be customized are not immediately intuitive.
-        Consequently, the team explored multiple approaches to using Experience Builder.  We explored many different templates, and 
-        learned how to use many of the available widgets.</p>
-        <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
-            This gave us the opportunity to create an experience that looks like a website where the first page is a project 
-            introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
-            Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
-        <div class="col-6">
-            <img src="images/exp-page.PNG" class="exp-image" alt="Screenshot of a 'Home' page created for a draft web experience">
-        </div>        
-        <div class="col-6">
-            <img src="images/exp-page1.PNG" class="exp-image" alt="Screenshot of a web experience embedded into another web experience on a separate page">
+            <p class="section-style-1col">Exploring Experience Builder, the team could quickly see that it was a viable option for our 
+            intended outcome of an app that presents a dynamic map of our study area indicating headwaters and helping the user 
+            trace downstream flow and connected stream segments.  Experience Builder is extremely powerful with many built-in 
+            templates and widgets that can provide all sorts of functionality.  The drawback is that with all of these options, it 
+            is fairly complex upon first approach.  The tools and the various ways they can be customized are not immediately intuitive.
+            Consequently, the team explored multiple approaches to using Experience Builder.  We explored many different templates, and 
+            learned how to use many of the available widgets.</p>
+        <div class="section-style-1col">
+            <div class="col-4">
+                <img src="images/tracedown_set.png" class="exp-image" alt="Screenshot of a 'Home' page created for a draft web experience">
+            </div>        
+            <div class="col-8">
+                <img src="images/tracedown_result.png" class="exp-image" alt="Screenshot of a web experience embedded into another web experience on a separate page">
+            </div>
         </div>
-        <div class="col-6">
-            <img src="images/streamorderfilteringexp.PNG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order">
-        </div>        
-        <div class="col-6">
-            <img src="images/querystreamexp.PNG" class="exp-image" alt="Screenshot of a web experience with a widget for locating the next downstream event">
+        <div class="col-12 background-grey">
+            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
+                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
+                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
+                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <div class="section-style-1col">
+                <div class="col-4">
+                    <img src="images/traceup_set.png" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order">
+                </div>        
+                <div class="col-8">
+                    <img src="images/traceup_result.png" class="exp-image" alt="Screenshot of a web experience with a widget for locating the next downstream event">
+                </div>
+            </div>
         </div>
     </section>
     <section class="col-12">
@@ -99,35 +99,18 @@
             users and having to learn TypeScript and React to create custom widgets. Therefore, if the client does 
             not have a requirement for custom development, there is no need to install ArcGIS Experience Builder 
             Developer Edition and ArcGIS Experience Builder will be able to meet all the project requirements.</p>
-
-            <p class="section-style-1col">Installing the Experience Builder Developers Editions is no mean feat! The listed instructions
-            breeze through certain specific steps, such as the need to go to the Developers account OAuth2.0 tab and reset the 
-            redirect-URI to localhost:3001 in order to be able to connect with the actual development tool once everything has been installed.
-            It requires download and install of Node.js which needs a system reboot.  And then after the download and install of the 
-            primary package (ArcGISExperienceBuilder) it requires activation of the client and server components in Command Prompt, and then 
-            these need to be turned on with the command prompt every time it is used.  As we were developing Experience options 
-            for our collaborative project's dynamic map, it seemed that a custom widget may be require to search through the data and 
-            select stream segments by NextDownIDs, and so we did explore the custom widget direction, but now are moving more in the 
-            direction of restructuring the data in the final WebMap to fascilitate this functionality.</p>
-
         <div class="col-6">
-            <img src="images/nodejsScreenCap.JPG" class="exp-image" alt="Screenshot of the Node.js installation">
+            <img src="images/staticmap_screen.jpg" class="exp-image" alt="Screenshot of the Node.js installation">
         </div>        
         <div class="col-6">
-            <img src="images/OAth2.PNG" class="exp-image" alt="Screenshot of the OAuth2.0 window in the ArcGIS Developers website">
+            <img src="images/staticmap_print.jpg" class="exp-image" alt="Screenshot of the OAuth2.0 window in the ArcGIS Developers website">
         </div>
         <div class="col-6">
-            <img src="images/client.PNG" class="exp-image" alt="Screenshot of using the Command Prompt to start the client">
+            <img src="images/staticmap_screen2.jpg" class="exp-image" alt="Screenshot of using the Command Prompt to start the client">
         </div>        
         <div class="col-6">
-            <img src="images/server.PNG" class="exp-image" alt="Screenshot of using the Command Prompt to start the server">
+            <img src="images/staticmap_print2.jpg" class="exp-image" alt="Screenshot of using the Command Prompt to start the server">
         </div>
-            <div class="col-6">
-                <img src="images/expbuild.png" class="exp-image" alt="Screenshot of the ArcGIS Experience Builder Developer Edition software running on localhost port 3001">
-            </div>        
-            <div class="col-6">
-                <img src="images/expproject.PNG" class="exp-image" alt="Screenshot of a draft web experience made with the ArcGIS Experience Builder Developer Edition">
-            </div>
     </section>
     <section class="col-12 background-grey">
         <h2 id="web-exp">Web App: ArcGIS Experience Builder</h2>
@@ -140,26 +123,48 @@
             an easy fix simply by removing those layers from the web map, and then the filter settings were re-worked to use buttons instead of tabs to select 
             groupings of stream orders.  Always beta-test everything before final submission!</p>
         <div class="col-6">
-            <img src="images/hub.PNG" class="exp-image" alt="Screenshot of the Hub Site">
+            <img src="images/webexp_home.JPG" class="exp-image" alt="Screenshot of the Hub Site">
         </div>        
         <div class="col-6">
-            <img src="images/hub5.PNG" class="exp-image" alt="Screenshot of a web map showing the Study Area and paragraph in the Hub Site">
+            <img src="images/webexp_view.JPG" class="exp-image" alt="Screenshot of a web map showing the Study Area and paragraph in the Hub Site">
         </div>
-        <div class="col-6">
-            <img src="images/hub2.PNG" class="exp-image" alt="Screenshot of a web map showing Strahler Stream Order in the Hub Site">
-        </div>        
-        <div class="col-6">
-            <img src="images/hub1.PNG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order in the Hub Site">
+        <div class="col-12 background-grey">
+            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
+                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
+                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
+                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <div class="col-3">
+                <img src="images/webexp_layers.JPG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order">
+            </div>        
+            <div class="col-3">
+                <img src="images/webexp_ricelake_off.JPG" class="exp-image" alt="Screenshot of a web experience with a widget for locating the next downstream event">
+            </div>
+            <div class="col-3">
+                <img src="images/webexp_opacity.JPG" class="exp-image" alt="Screenshot of a web map showing Strahler Stream Order in the Hub Site">
+            </div>        
+            <div class="col-3">
+                <img src="images/webexp_opacity2.JPG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order in the Hub Site">
+            </div>
         </div>
-        <div class="col-6">
-            <img src="images/hub3.PNG" class="exp-image" alt="Screenshot of a bar graph showing Stream Order counts in the Hub Site">
+        <div class="col-12 background-grey">
+            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
+                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
+                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
+                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <div class="col-4">
+                <img src="images/webexp_filter1.JPG" class="exp-image" alt="Screenshot of a web experience with filters for Stream Order">
+            </div>        
+            <div class="col-4">
+                <img src="images/webexp_filter2.JPG" class="exp-image" alt="Screenshot of a web experience with a widget for locating the next downstream event">
+            </div>
+            <div class="col-4">
+                <img src="images/webexp_filter3.JPG" class="exp-image" alt="Screenshot of a web map showing Strahler Stream Order in the Hub Site">
+            </div>        
         </div>
-        <div class="col-6">
-            <img src="images/hub4.PNG" class="exp-image" alt="Screenshot of a web experience with a search widget in the Hub Site">
-        </div>
+        <p><button type="button" class="button button2" onclick="window.open('https://experience.arcgis.com/experience/6cab69d3760c457995294560918fff28', '_blank')">View Web Experience</button></p>
     </section>
     <section class="col-12">
-        <h2>Conclusions</h2>
+        <h2>File Geodatabase and Supporting Files</h2>
         <p class="section-style-1col">In the course of this exercise, we found the exploration of ESRI web development solutions very fruitful and enlightening.
         We had originally thought that StoryMaps might be a sufficient and easy pathway for developing a web aplication along the lines of our needs 
         for our collaborative project mapping headwaters, but eventually settled on a preference for the enhanced functionality of Experience Builder.
@@ -170,7 +175,6 @@
         immediately identify, headwater streams, and their interconnected hierarchy of down-stream flow. And creating a platform in Hub to document
         our process has shown that Hub is relatively easy to use and a good way to showcase other ESRI web applications organized with explanatory
         text and images.</p>
-        <p><button type="button" class="button button2" onclick="window.open('https://rice-lake-plains-hydrology-fleming.hub.arcgis.com/', '_blank')">View Hub Site</button></p>
     </section>
     <footer class="col-12 outer-margin">
         <div id="footer-images">
