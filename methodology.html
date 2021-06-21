@@ -53,6 +53,9 @@
         <ul>
             <li>Ontario GeoHub provided great elevation data in their Ontario Integrated Hydrology dataset,
             as well as cold water data in their Aquatic Resource Area data.</li>
+            <img src="images/OIHdata.jpg" alt="Ontario Integrated Hydrology Data web interface view">
+            <li>South Central Ontario Orthophotography (SCOOP) 2018 high resolution imagery tiles were provided by the NCC for model verification.</li>
+            <img src="images/SCOOPimages.jpg" alt="SCOOP 2018 high res tiles">
             <li>Data was extracted by mask to the Area Of Interest and Projected to NAD 83 Ontario MNR Lambert.</li>
         </ul>
         <h3 class="title-left">Recommendations</h3>
@@ -71,28 +74,37 @@
             <li>Though we had hoped to include our Trace Downstream and Trace Upstream tools in the delivered Experience
             it was found that the NCC AGOL account does not allow the use of trace networks, and no way was found to
             replicate this functionality with the tools available, so it was left as desktop only.</li>
-            <li>Experience Builder was a steep learning curve with a tricky to use interface (ie. feature view widget overrides
-                initial map view settings)
+            <li>Deciding on a stream threshold value to determine what level of flow accumulation would constitute a "headwater"
+            in this study was difficult to base off existing literature, as it was found to be either too complex (requiring
+            data on soil composition and vegetation - all outside the scope of this study) or too simplistic (using a default value
+            of 1% of the total catchment outlfow, which for this study would only mirror existing stream data and not include
+            surface runoff direction/ephemeral stream creation)
             </li>
-            <li>StoryMaps didn't provide enough functionality and is optimized for multi-media and static content, which was not
-                the focus of the solution
-            </li>
+            
         </ul>
         <h3 class="title-left">Outcomes</h3>
         <ul>
-            <li>Experience Builder contains a lot of useful functionality but requires a significant amount of time to learn</li>
-            <li>Sometimes using a "workaround" is easier than trying to get the widget to work in the indended manner (such
-                as manipulating the original data instead of recoding a custom widget)</li>
-            <li>The choice of the solution is directly dependent on the goal of the project</li>
+            <li>The final model created used the Enhanced Flow Direction Grid(EFDIR) from Ontario Integrated Hydrology data 
+            with tools from the Arc Hydro tool set imported into ArcGIS Pro 2.7 to construct a stream layer with a threshold value
+            of 150.</li>
+            <img src="images/EFDIRarchydroModelImage.jpg" alt="ArcGIS Pro Model to construct streams from EFDRI with Arc Hydro tools">
+            <li>Inputs were set to parameters to allow the user to quickly reset inputs and stream threshold so many combinations could
+            be easily created and compared for analysis.</li>
+            <li>After examining many possible stream threshold value from the various combinations of DEM or EFDIR input and built-in 
+            hydrology tools or Arc Hydro tools, the final model was chosen.</li>
+            <img src="images/StreamThresholdTestsSpreadsheetImage.jpg" alt="Spreadsheet of inputs and stream thresholds test in models">
+            <li>The top selected models were shared with the NCC and discussed to settle on the final model from the EFDIR data using 
+            Arc Hydro tools with a stream threshold of 150.  THough it is known that this creates Strahler Order 1 streams that are 
+            ephemeral, this was preferred by the client.</li>
         </ul>
-        <h3 class="title-left">Next Steps</h3>
+        <h3 class="title-left">Recommendations</h3>
         <ul>
             <li>Dedicated more time to learning Exprience Builder</li>
         </ul>
     </div>
     </section>
     <section class="col-12">
-        <h2>Milestone 3.1: Development in ArcGIS Experience Builder</h2>
+        <h2>Phase 3: Visualization</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
@@ -102,43 +114,21 @@
             <li>Using views was difficult, but were required to overcome challenges of widgets re-setting initial view</li>
             <li>Difficulty in distinguishing format options between Maps, Views, and Pages</li>
         </ul>
-        <h3 class="title-left">Learning Outcomes</h3>
+        <h3 class="title-left">Outcomes</h3>
         <ul>
             <li>Created multiple prototype proof-of-concept Experiences utilizing different widgets to display different properties
                 of the data</li>
             <li>Possible to create a webpage-style application in Experience Builder</li>
         </ul>
-        <h3 class="title-left">Next Steps</h3>
+        <h3 class="title-left">Recommendations</h3>
         <ul>
             <li>Decide which approaches best fit the goals of the problem statement</li>
         </ul>
     </div>
     </section>
-    <section class="col-12 background-grey">
-        <h2>Milestone 3.2: Download Developer Edition</h2>
-    <div class="section-style-1col">
-        <h3 class="title-left">Challenges Encountered</h3>
-        <ul>
-            <li>Downloading Developer Edition was time consuming and required the download of Node.js, ArcGIS Experience Builder
-                Developer Package (requires running multiple programs from the Command Prompt)</li>
-            <li>Every usage requires starting the client and server services from Command Prompt</li>
-            <li>To authenticate the application, new credentials had to be created in a ArcGIS Developers account</li>
-            <li>To make custom widgets it is necessary to learn TypeScript and React which are ESRI specific languages</li>
-        </ul>
-        <h3 class="title-left">Learning Outcomes</h3>
-        <ul>
-            <li>Getting ArcGIS Experience Builder Developer Edition started on a local computer is time-consuming
-                (valuable time taken away from working on the actual project)</li>
-            <li>The learning curve for create custom widgets is extremely high and should be avoided if possible</li>
-        </ul>
-        <h3 class="title-left">Next Steps</h3>
-        <ul>
-            <li>Return to Experience Builder to focus on configuring the "off-the-shelf" widgets</li>
-        </ul>
-    </div>
-    </section>
+  
     <section class="col-12">
-        <h2>Milestone 4.1: Progress Review with Shawn</h2>
+        <h2>Phase 4: Programming and Customization</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Meeting Outcomes</h3>
         <ul>
