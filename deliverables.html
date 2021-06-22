@@ -14,7 +14,18 @@
     <header class="col-12 outer-margin">
         <div class="navbar" id="myTopnav">
             <a href = "index.html">Home</a>
-            <a href = "methodology.html">Methodology</a>
+            <div class = "dropdown">
+                <a href = "methodology.html">Methodology</a>
+                <div class = "dropdown-content">
+                    <a href="methodology.html#data">Data Acquisition and Preprocessing</a>
+                    <a href="methodology.html#spatial">Spatial Analysis</a>
+                    <a href="methodology.html#visualization">Visualization</a>
+                    <a href="methodology.html#programming">Programming and Customization</a>
+                </div>  
+            </div>  
+            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                <i class="fa fa-bars"></i>
+            </a>
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
                 <a class="active" href="deliverables.html">Deliverables</a>
