@@ -148,51 +148,35 @@
     </div>
     </section>
   
-    <section class="col-12">
-        <h2>Phase 4: Programming and Customization</h2>
-    <div class="section-style-1col">
-        <h3 class="title-left">Meeting Outcomes</h3>
-        <ul>
-            <li>Recommended using ArcGIS Hub to create a website to embed the Experience Builder solutions and create a webpage-style application</li>
-            <li>Encouraged the manipulation of data instead of configuring the widget</li>
-        </ul>
-    </div>
-    </section>
     <section class="col-12 background-grey">
-        <h2>Milestone 4.2: Introduction to ArcGIS Hub</h2>
+        <h2>Phase 4: Programming and Customization</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
-            <li>Default template contained a lot of features that were not necessary (subtractive rather than additive templates)</li>
-            <li>Challenging to change page formatting</li>
-            <li>Easy to lose changes when switching to Preview Mode</li>
-            <li>Difficult to find ArcGIS Hub in AGOL account as it creates a new folder upon creation</li>
+            <li>Experience Builder Developer is too complex to work with in the time frame for this project.</li>
+            <li>Trace network tools are only slightly customizable even in ArcPy.</li>
         </ul>
-        <h3 class="title-left">Learning Outcomes</h3>
+        <h3 class="title-left">Outcomes</h3>
         <ul>
-            <li>ArcGIS Hub is a viable option for combining static and dynamic ESRI content (Web Maps, Experiences) in a 
-                presentation-ready format</li>
+            <li>Two tools were created for use in ArcGIS Pro 2.7 and higher that utilize a trace network (trace networks were
+            created to be used with this tool in Pro from model outputs and their smoothed versions that were used in the static map)
+            to select all connected stream segments either downstream or upstream of a selected point.  These tools utilize the 
+            functionality of trace networks but customized to facilitate use by users with little to no experience working with 
+            ArcGIS Pro so that trace networks to be followed and input point selection are easily run from a GUI when the tool 
+            is run as a Geoprocessing Tool in Pro.</li>
+            <li>This was accomplished by customizing the script for the basic tool functions using Python and ArcPy and then resetting the 
+            tool parameters in Pro using a reference point layer.</li>
+            <img src="images/tracetooluserinputset.jpg" alt="Tool parameters set to user input based on reference layer">
+            <img src="images/tracetoolreferencelayer.jpg" alt="Reference layer defined and saved with study data">
+            <p>Customizing the Trace tools makes them easy for inexperienced Pro users</p>
         </ul>
-        <h3 class="title-left">Next Steps</h3>
+        <h3 class="title-left">Recommendations</h3>
         <ul>
             <li>Each group member created an ArcGIS Hub website to embed the Experiences</li>
         </ul>
     </div>
     </section>
-    <section class="col-12">
-        <h2>Milestone 5: Final Submission</h2>
-    <div class="section-style-1col">
-        <h3 class="title-left">Outcomes</h3>
-        <ul>
-            <li>One ArcGIS Hub was selected to embed the Experiences along with explanatory text and web maps to support the 
-                problem statement</li>
-        </ul>
-        <h3 class="title-left">Future Improvements</h3>
-        <ul>
-            <li>More functionality and interactivity in the Experiences and in the ArcGIS Hub website</li>
-        </ul>
-    </div>
-    </section>
+    
     <footer class="col-12 outer-margin">
         <div id="footer-images">
             <img src="images/FlemingSENRS_noBackground.png" alt="Fleming School of the Environment and Natural Resources Logo" style="height: 100%">
