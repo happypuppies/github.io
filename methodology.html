@@ -14,7 +14,18 @@
     <header class="col-12 outer-margin">
         <div class="navbar" id="myTopnav">
             <a href = "index.html">Home</a>
-            <a class="active" href = "methodology.html">Methodology</a>
+            <div class = "dropdown">
+                <a class="active" href = "methodology.html">Methodology</a>
+                <div class = "dropdown-content">
+                    <a href="#data">Data Acquisition and Preprocessing</a>
+                    <a href="#spatial">Spatial Analysis</a>
+                    <a href="#visualization">Visualization</a>
+                    <a href="#programming">Programming and Customization</a>
+                </div>  
+            </div>  
+            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                <i class="fa fa-bars"></i>
+            </a>    
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
                 <a href="deliverables.html">Deliverables</a>
@@ -42,7 +53,7 @@
         </div>
     </section>
     <section class="col-12">
-        <h2>Phase 1: Data Acquisition and Preprocessing</h2>
+        <h2 id="data">Phase 1: Data Acquisition and Preprocessing</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
@@ -71,7 +82,7 @@
     </div>
     </section>
     <section class="col-12 background-grey">
-        <h2>Phase 2: Spatial Analysis</h2>
+        <h2 id="spatial">Phase 2: Spatial Analysis</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
@@ -109,14 +120,14 @@
         </ul>
         <h3 class="title-left">Recommendations</h3>
         <ul>
-            <li>It is still perhaps possible to build a downstream trace tool for Experience Builder by creating a custom widget with 
-            Developers tools, but this was not possible given the team experience and time available, and the constraints of the client 
-            AGOL account version which does not support trace networks.</li>
+            <li>More in-depth study of headwaters could be performed with more time.  They could be formed using multi-criteria analysis
+            that includes landform data (which could be determined by spectral analysis of satellite imagery) and geological data on 
+            soil composition and porosity, also perhaps using more finely-grained elevation data if available.</li>
         </ul>
     </div>
     </section>
     <section class="col-12">
-        <h2>Phase 3: Visualization</h2>
+        <h2 id="visualization">Phase 3: Visualization</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
@@ -149,7 +160,7 @@
     </section>
   
     <section class="col-12 background-grey">
-        <h2>Phase 4: Programming and Customization</h2>
+        <h2 id="programming">Phase 4: Programming and Customization</h2>
     <div class="section-style-1col">
         <h3 class="title-left">Challenges Encountered</h3>
         <ul>
@@ -169,10 +180,26 @@
             <img src="images/tracetooluserinputset.jpg" alt="Tool parameters set to user input based on reference layer">
             <img src="images/tracetoolreferencelayer.jpg" alt="Reference layer defined and saved with study data">
             <p>Customizing the Trace tools makes them easy for inexperienced Pro users</p>
+            <img src="images/tracedownToolInterface.jpg" alt="Geoprocessing Tool GUI with easy user interface">
+            <p>Making complex trace tools available in such a simple interface makes powerful functionality more accessible</p>
+            <li>Experience Builder provided customizable widgets that were helpful in displaying the project data in a dynamic
+            web map presentation.  The ability to quickly navigate multiple views enabled the easy visualization of 8 distinct 
+            focal areas as defined by the NCC for ease of use.</li>
+            <img src="images/webex_focalAreas.jpg" alt="Stream map images of Cold Creek, Murray Marsh and Fleetwood Creek side-by-side">
+            <p>Quick comparison between specific areas is facilitated by focal area views</p>
+            <li>The ability to easily make specific layers visible or invisible, or to adjust their opacity, provides opportunity
+            for useful visualization to compare the layer of modelled streams with layers of cold water data.  This app contains 
+            data on what stream segments are classified as cold water for fish habitats, and this can be visualized by making the 
+            cold water layer visible and decreasing the opacity of the stream layer to help the cold water segments stand out.</li>
+            <img src="images/webex_opacity3.jpg" alt="Cold water segments visible over stream layer that is translucent">
+            <p>Cold water segments in addition to headwaters are important to conservation efforts</p>
+
         </ul>
         <h3 class="title-left">Recommendations</h3>
         <ul>
-            <li>Each group member created an ArcGIS Hub website to embed the Experiences</li>
+            <li>It is still perhaps possible to build a downstream trace tool for Experience Builder by creating a custom widget with 
+            Developers tools, but this was not possible given the team experience and time available, and the constraints of the client 
+            AGOL account version which does not support trace networks.</li>
         </ul>
     </div>
     </section>
