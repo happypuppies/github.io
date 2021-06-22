@@ -23,9 +23,6 @@
                     <a href="methodology.html#programming">Programming and Customization</a>
                 </div>  
             </div>  
-            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
-                <i class="fa fa-bars"></i>
-            </a>
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
                 <a class="active" href="deliverables.html">Deliverables</a>
@@ -104,14 +101,12 @@
     </section>
     <section class="col-12 background-grey">
         <h2 id="web-exp">Web App: ArcGIS Experience Builder</h2>
-        <p class="section-style-1col">While ArcGIS Experience Builder has the ability to create web applications that look like webpages (i.e. an experience
-            can contain a page with all the front-end web design elements), the client did not specify that everything must be hosted in Experience Builder.
-            A Hub Site was developed with ArcGIS Hub to create a web application that resembles a webpage with background information about the project and 
-            study area. Advantages of Hub include more customization options available for the layout and seamless integration of ArcGIS applications like 
-            web maps, web experiences and graphs.  It was discovered after the Hub app was thought to be completed that changes in one of the web maps (adding
-            layers in an attempt to improve Query widget functionality) caused the stream order filtering to no longer function properly.  However this was 
-            an easy fix simply by removing those layers from the web map, and then the filter settings were re-worked to use buttons instead of tabs to select 
-            groupings of stream orders.  Always beta-test everything before final submission!</p>
+        <p class="section-style-1col">A web experience was built to aid in the visualization of stream order in the streams feature class alongside 
+            cold-water streams data. When opened, the home page shows a web map with the ordered streams in the study area (Figure 3.8). Functionality 
+            in the web map includes the ability to pan, zoom in, zoom out, change the base map, and measure length and area. Layers on the web map 
+            which include a polygon for Rice Lake, stream features from the Streams feature class, cold-water streams and 40m buffers around each 
+            cold-water stream segment. The horizontal navigation bar at the bottom of the screen is used to switch between views. There are a total 
+            of nine views in the web experience: a view for the entire study area and one for each focal area.</p>
         <div class="col-6">
             <img src="images/webexp_home.JPG" class="exp-image" alt="Screenshot of the Web Experience home page">
         </div>        
@@ -137,10 +132,11 @@
             </div>
         </div>
         <div class="col-12 background-grey">
-            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
-                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
-                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
-                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <p class="section-style-1col">Below the web map are filters for the Stream layer. Streams can be filtered by their Strahler stream order to quickly 
+                identify headwater streams in the study area. The first filter labelled “1, 2 & 3 Order Streams” selects and displays all features in the Streams 
+                layer where STRAHLER = 1 or STRAHLER = 2 or STRAHLER = 3 (all headwater streams). The second filter labelled “1 & 2 Order Streams” selects and displays 
+                all features in the Streams layer where STRAHLER = 1 or STRAHLER = 2. The last filter labelled “1st Order Streams Only” selects and displays 
+                all features in the Streams layer where STRAHLER = 1. When all three filters are on, only Order 1 streams are displayed.</p>
             <div class="col-4">
                 <img src="images/webexp_filter1.JPG" class="exp-image" alt="Screenshot of the web map when streams are filtered by Strahler order 1, 2 or 3">
             </div>        
