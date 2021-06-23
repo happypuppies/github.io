@@ -23,9 +23,6 @@
                     <a href="methodology.html#programming">Programming and Customization</a>
                 </div>  
             </div>  
-            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
-                <i class="fa fa-bars"></i>
-            </a>
             <div class = "dropdown">
                 <!-- Use the <a> element to open the dropdown menu -->
                 <a class="active" href="deliverables.html">Deliverables</a>
@@ -42,7 +39,6 @@
             </a>
         </div>
     </header>
-    <!-- Photo by Pankaj Patel on Unsplash J-->
     <section class="col-12 outer-margin">
         <div class="deliverables-header">
             <div class ="header-overlay header-overlay-gradient">
@@ -54,15 +50,11 @@
     </section>
     <section class="col-12">
         <h2 id="streams">Hydrological Modelling Results</h2>
-        <p class="section-style-1col">ArcGIS StoryMaps was investigated by Kathryn as a possible solution to accompany the ArcGIS 
-            Experience Builder application. This was done in order to avoid some of the bugs that were being discovered while working 
-            with Experience Builder. While working with StoryMaps, the biggest limitation that was noticed was the type of content 
-            that can be included in the solution. StoryMaps seems to be an optimal way to share photo and video content along with 
-            basic web maps and text content. StoryMaps also has the ability to embed html content, which was experimented with using 
-            the NCC website, however lacks the functionality to do anything more technical. The group decided to not proceed with 
-            StoryMaps any further past this point, deciding that the functionality of the web app should be prioritized. </p>
+        <p class="section-style-1col">Hydrological modelling produced a stream network with 12,952 features where each feature has a unique HydroID, 
+            NextDownID of the next downstream feature and an attributed Strahler stream order (STRAHLER attribute). Stream order ranges from 1 to 7
+            with a total of 11,359 streams having a Strahler stream order of 1, 2 or 3. This means headwater streams make up approximately 87 percent of the streams in the study area.</p>
         <div class="col-6">
-            <img src="images/streams_fc.JPG" class="exp-image" alt="Streams delineated from an EFDIR and with a stream threshold value set to 150">
+            <img src="images/Layout.png" class="exp-image" alt="Streams delineated from an EFDIR and with a stream threshold value set to 150">
         </div>
         <div class="col-6">
             <img src="images/streams_fc_table.JPG" class="exp-image" alt="Attribute table of the Streams feature class with STRAHLER stream order">
@@ -70,13 +62,10 @@
     </section>
     <section class="col-12 background-grey">
         <h2 id="trace-tools">Trace Downstream and Upstream Script Tools</h2>
-            <p class="section-style-1col">Exploring Experience Builder, the team could quickly see that it was a viable option for our 
-            intended outcome of an app that presents a dynamic map of our study area indicating headwaters and helping the user 
-            trace downstream flow and connected stream segments.  Experience Builder is extremely powerful with many built-in 
-            templates and widgets that can provide all sorts of functionality.  The drawback is that with all of these options, it 
-            is fairly complex upon first approach.  The tools and the various ways they can be customized are not immediately intuitive.
-            Consequently, the team explored multiple approaches to using Experience Builder.  We explored many different templates, and 
-            learned how to use many of the available widgets.</p>
+            <p class="section-style-1col">The Trace Downstream script tool uses the Trace tool to find all stream features located downstream from a start point. An input trace network 
+                and start point are defined by the user. The start point can be a feature layer on the map, a feature class or interactively created with the pencil icon. 
+                Upon completion of the script tool, single stream features which connect to the upstream starting point are selected.
+            </p>
         <div class="section-style-1col">
             <div class="col-4">
                 <img src="images/tracedown_set.png" class="exp-image" alt="Trace Downstream script tool input parameters">
@@ -86,10 +75,8 @@
             </div>
         </div>
         <div class="col-12 background-grey">
-            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
-                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
-                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
-                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <p class="section-style-1col">Similarly, the Trace Upstream script tool uses the Trace tool on a user-defined input trace network and start point to find all stream 
+                features located upstream from a start point. Upon completion of the script tool, all streams located upstream from the starting point are selected.</p>
             <div class="section-style-1col">
                 <div class="col-4">
                     <img src="images/traceup_set.png" class="exp-image" alt="Trace Uptream script tool input parameters">
@@ -102,38 +89,24 @@
     </section>
     <section class="col-12">
         <h2 id="static-map">Large Format Poster Map</h2>
-        <p class="section-style-1col">To explore the power of ArcGIS Experience Builder, ArcGIS Experience Builder Developer Edition was 
-            installed on James and Kristine's computers. Since the server can be installed using a personal ArcGIS Developers 
-            account, this offers a testing environment for custom development that is not connected to a larger 
-            organization. Furthermore, experiences built with the Developer Edition will not disappear once a user 
-            is no longer part of an organization. Drawbacks include having to start the client and server 
-            every time you want to use the Developer Edition, inability to share an experience easily with external 
-            users and having to learn TypeScript and React to create custom widgets. Therefore, if the client does 
-            not have a requirement for custom development, there is no need to install ArcGIS Experience Builder 
-            Developer Edition and ArcGIS Experience Builder will be able to meet all the project requirements.</p>
+        <p class="section-style-1col">The static map (36x48) visualizes the results from stream modelling, using a custom Color Brewer colour ramp to highlight the 
+            headwater streams in the study area. Major highways, waterbodies and focal areas contained within an inset map are included for reference.
+            A print-friendly version of the static map uses the same symbology with a lighter basemap to provide constrast between water and land when the static map is printed.</p>
         <div class="col-6">
             <img src="images/staticmap_screen.jpg" class="exp-image" alt="Screenshot of the large format static map (digital version)">
         </div>        
         <div class="col-6">
             <img src="images/staticmap_print.jpg" class="exp-image" alt="Screenshot of the large format static map (print version)">
         </div>
-        <div class="col-6">
-            <img src="images/staticmap_screen2.jpg" class="exp-image" alt="Screenshot of the smaller sized static map (digital version)">
-        </div>        
-        <div class="col-6">
-            <img src="images/staticmap_print2.jpg" class="exp-image" alt="Screenshot of the smaller sized static map (print version)">
-        </div>
     </section>
     <section class="col-12 background-grey">
         <h2 id="web-exp">Web App: ArcGIS Experience Builder</h2>
-        <p class="section-style-1col">While ArcGIS Experience Builder has the ability to create web applications that look like webpages (i.e. an experience
-            can contain a page with all the front-end web design elements), the client did not specify that everything must be hosted in Experience Builder.
-            A Hub Site was developed with ArcGIS Hub to create a web application that resembles a webpage with background information about the project and 
-            study area. Advantages of Hub include more customization options available for the layout and seamless integration of ArcGIS applications like 
-            web maps, web experiences and graphs.  It was discovered after the Hub app was thought to be completed that changes in one of the web maps (adding
-            layers in an attempt to improve Query widget functionality) caused the stream order filtering to no longer function properly.  However this was 
-            an easy fix simply by removing those layers from the web map, and then the filter settings were re-worked to use buttons instead of tabs to select 
-            groupings of stream orders.  Always beta-test everything before final submission!</p>
+        <p class="section-style-1col">A web experience was built to aid in the visualization of stream order in the streams feature class alongside 
+            cold-water streams data. When opened, the home page shows a web map with the ordered streams in the study area. Functionality 
+            in the web map includes the ability to pan, zoom in, zoom out, change the base map, and measure length and area. Layers on the web map 
+            which include a polygon for Rice Lake, stream features from the Streams feature class, cold-water streams and 40m buffers around each 
+            cold-water stream segment. The horizontal navigation bar at the bottom of the screen is used to switch between views. There are a total 
+            of nine views in the web experience: a view for the entire study area and one for each focal area.</p>
         <div class="col-6">
             <img src="images/webexp_home.JPG" class="exp-image" alt="Screenshot of the Web Experience home page">
         </div>        
@@ -141,10 +114,10 @@
             <img src="images/webexp_view.JPG" class="exp-image" alt="Screenshot of a different view in the Web Experience">
         </div>
         <div class="col-12 background-grey">
-            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
-                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
-                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
-                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <p class="section-style-1col">In the left panel, a user has the ability to toggle layers on and off with the eye icon beside each layer. When
+                a layer is turned off, there is a slash through the eye icon and it is no longer visible on the web map. As you can see, virtual stream segments 
+                that run through Rice Lake are shown when the Rice Lake layer is turned off. By clicking on the 3 dots beside the layer's name, the opacity of the
+                layer can be increased to emphasize features or decreased to de-emphasize features.</p>
             <div class="col-3">
                 <img src="images/webexp_layers.JPG" class="exp-image" alt="Screenshot of the functionality to toggle layers on and off">
             </div>        
@@ -159,10 +132,11 @@
             </div>
         </div>
         <div class="col-12 background-grey">
-            <p class="section-style-1col">One piece of functionality we liked was the ability to have multiple pages in one experience.
-                This gave us the opportunity to create an experience that looks like a website where the first page is a project 
-                introduction (a "Home" page) and the second page is the actual application. This was done by embedding a previous application made in 
-                Experience Builder into a new web experience. Below are some screen captures of our prototype web experiences.</p>
+            <p class="section-style-1col">Below the web map are filters for the Stream layer. Streams can be filtered by their Strahler stream order to quickly 
+                identify headwater streams. The first filter labelled “1, 2 & 3 Order Streams” selects and displays all features in the Streams 
+                layer where STRAHLER = 1 or STRAHLER = 2 or STRAHLER = 3 (all headwater streams). The second filter labelled “1 & 2 Order Streams” selects and displays 
+                all features in the Streams layer where STRAHLER = 1 or STRAHLER = 2. The last filter labelled “1st Order Streams Only” selects and displays 
+                all features in the Streams layer where STRAHLER = 1. When all three filters are on, only Order 1 streams are displayed.</p>
             <div class="col-4">
                 <img src="images/webexp_filter1.JPG" class="exp-image" alt="Screenshot of the web map when streams are filtered by Strahler order 1, 2 or 3">
             </div>        
@@ -177,16 +151,11 @@
     </section>
     <section class="col-12">
         <h2 id="file-gdb">File Geodatabase and Supporting Files</h2>
-        <p class="section-style-1col">In the course of this exercise, we found the exploration of ESRI web development solutions very fruitful and enlightening.
-        We had originally thought that StoryMaps might be a sufficient and easy pathway for developing a web aplication along the lines of our needs 
-        for our collaborative project mapping headwaters, but eventually settled on a preference for the enhanced functionality of Experience Builder.
-        Since our focus is not on data analysis, we determined dashboards would not add to what we are trying to accomplish, and we found WebApp Builder 
-        to be basically a watered-down version of Experience Builder, and so we went with that.  Since our collaborative project client is familiar with, 
-        and uses, ESRI products, we did not pursue open source options.  We now feel like we have a clear path forward to produce a high-quality dynamic 
-        Web Map Application that will be valuable to our clients' conservation efforts, built in ESRI Experience Builder, with the ability to highlight and 
-        immediately identify, headwater streams, and their interconnected hierarchy of down-stream flow. And creating a platform in Hub to document
-        our process has shown that Hub is relatively easy to use and a good way to showcase other ESRI web applications organized with explanatory
-        text and images.</p>
+        <p class="section-style-1col">The streams delineated from the EFDIR and all the data used to construct the trace networks, static map and web experience 
+            were imported into a file geodatabase called RLP_LIP_2021.gdb. Three feature datasets are used to organize data by deliverable category. The RLP_LIP_2021.tbx
+            toolbox contains two hydrological models that can delineate streams from a DEM or EFDIR and the Trace Downstream and Trace Upstream script tools. Additional
+            files include the Python (.py) script files required to power the script tools, a layer (.lyrx) file that stores the point symbology for the Input Start Point
+            parameter and a layer (.lyrx) file that stores the symbology for stream order (STRAHLER attribute in the Streams feature class).</p>
         <div class="col-3">
             <img src="images/file_gdb.JPG" class="exp-image" alt="Screenshot of the RLP_LIP_2021.gdb file geodatabase">
         </div>        
