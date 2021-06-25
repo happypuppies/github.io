@@ -206,6 +206,14 @@ Date: November 28, 2020
 	height: 100%;
 }
 
+.exp-image2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 100%;
+}
+
 .button {
 	border: none;
 	color: white;
