@@ -194,7 +194,6 @@ Date: November 28, 2020
 	text-align: center;
 	height: 75px;
 }
-
 .headshot {
 	display: block;
 	margin-left: auto;
@@ -241,6 +240,10 @@ Date: November 28, 2020
 
   .container {
 	  text-align: center;
+  }
+
+  .no-top {
+	  margin-top: 0px;
   }
 
 /* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp
